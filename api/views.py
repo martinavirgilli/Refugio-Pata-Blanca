@@ -1,11 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from rest_framework import viewsets
+from django.http import HttpResponse
+from rest_framework import viewsets, serializers, viewsets
 from django.contrib.auth.models import User
 from .models import Candidato, FormularioAdopcion, Visita, Usuario
 from .serializers import CandidatoSerializer, FormularioAdopcionSerializer, VisitaSerializer, UsuarioSerializer
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly, IsAdminUser
-from rest_framework import serializers, viewsets
 from utils.pagination import CustomPagination
 from utils.permission import TienePermisoModelo
 

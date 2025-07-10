@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib import admin
 from .models import Candidato, FormularioAdopcion, Visita, Usuario
 
 # Register your models here.
